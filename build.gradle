@@ -1,0 +1,35 @@
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'jacoco'
+
+group = appGroup
+version = appVersion
+sourceCompatibility = appSourceCompatibility
+targetCompatibility = appTargetCompatibility
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	testCompile('junit:junit:4.12') 	
+	testCompile('org.mockito:mockito-core:2.15.0')
+	testCompile('log4j:log4j:1.2.17')
+}
+
+jar {
+    baseName = appName
+    version =  appVersion
+    manifest {
+        attributes 'Implementation-Title': appName,
+                   'Implementation-Version': appVersion
+    }
+}
+
+test {
+	jacoco {
+		append = false
+		destinationFile = file("jacoco/jacocoTest.exec")
+	}
+	reports.junitXml.destination =  file("jacoco/test-results")
+}
