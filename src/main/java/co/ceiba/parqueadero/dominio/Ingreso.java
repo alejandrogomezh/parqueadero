@@ -1,4 +1,4 @@
-package co.ceiba.parqueadero.domain;
+package co.ceiba.parqueadero.dominio;
 
 import java.util.Calendar;
 import java.util.Date;
@@ -9,6 +9,7 @@ public class Ingreso {
 	private Vehiculo vehiculo;
 	private Date fecha;
 	
+	private Configuracion configuracion;
 	private RepositorioEstacionados repositorioEstacionados;
 
 	public Ingreso(Date fecha, Vehiculo vehiculo) {
@@ -35,11 +36,11 @@ public class Ingreso {
 					return false;
 				}
 			}
-			if(repositorioEstacionados.obtenerCantidadMotos() > 10) {
+			if(repositorioEstacionados.obtenerCantidadMotos() > configuracion.getMaximoMotos()) {
 				return false;
 			}
 		}else {
-			if(repositorioEstacionados.obtenerCantidadCarros() > 20) {
+			if(repositorioEstacionados.obtenerCantidadCarros() > configuracion.getMaximoCarros()) {
 				return false;
 			}
 		}

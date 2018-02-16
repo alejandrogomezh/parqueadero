@@ -1,4 +1,4 @@
-package co.ceiba.parqueadero.domain;
+package co.ceiba.parqueadero.dominio;
 
 import java.util.Date;
 

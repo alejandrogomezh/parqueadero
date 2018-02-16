@@ -1,4 +1,4 @@
-package co.ceiba.parqueadero.domain;
+package co.ceiba.parqueadero.dominio;
 
 public class Vehiculo {
 	private String tipo;
