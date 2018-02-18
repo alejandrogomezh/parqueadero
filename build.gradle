@@ -12,7 +12,10 @@ repositories {
 }
 
 dependencies {
-	testCompile('junit:junit:4.12') 	
+	compile('org.hibernate:hibernate-core:5.2.9.Final')
+	compile('com.h2database:h2:1.4.194')
+	
+	testCompile('junit:junit:4.12')
 	testCompile('org.mockito:mockito-core:2.15.0')
 	testCompile('log4j:log4j:1.2.17')
 }
