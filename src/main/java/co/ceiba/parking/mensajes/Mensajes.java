@@ -8,4 +8,8 @@ public class Mensajes {
 	public static String NO_HAY_CUPO = "¡no hay cupo!";
 	public static String INGRESO_NO_AUTORIZADO = "¡no está autorizado a ingresar!";
 	
+	private Mensajes() {
+		
+	}
+	
 }

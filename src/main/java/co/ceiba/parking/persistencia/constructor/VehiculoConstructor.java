@@ -21,9 +21,9 @@ public class VehiculoConstructor {
 	public static VehiculoEntity aEntidad(Vehiculo vehiculo) {
 		VehiculoEntity vehiculoEntity = null;
 		vehiculoEntity = new VehiculoEntity();
-		vehiculoEntity.getTipo();
-		vehiculoEntity.getPlaca();
-		vehiculoEntity.getCilindraje();
+		vehiculoEntity.setTipo(vehiculo.getTipo());
+		vehiculoEntity.setPlaca(vehiculo.getPlaca());
+		vehiculoEntity.setCilindraje(vehiculo.getCilindraje());
 		return vehiculoEntity;
 	}
 	

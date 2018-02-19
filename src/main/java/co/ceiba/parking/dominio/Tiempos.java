@@ -24,7 +24,7 @@ public class Tiempos implements TiemposInterface{
 		
 		long segundosTotal = (salida.getTime() - ingreso.getTime()) / 1000;
 		int minutosTotal = (int) (segundosTotal / 60);
-		horasTotal = (int) (minutosTotal / 60); //cuantos minutos o segundos de mas incrementa la hora
+		horasTotal = (minutosTotal / 60); //cuantos minutos o segundos de mas incrementa la hora
 		if((minutosTotal % 60) > 1) {
 			horasTotal++; //temporal se incrementa la hora si se pasa de un minuto ejemplo 1 minuto de parqueo equivale a 1 hora
 		}

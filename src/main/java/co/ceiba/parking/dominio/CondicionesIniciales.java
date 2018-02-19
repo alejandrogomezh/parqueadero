@@ -15,6 +15,10 @@ public class CondicionesIniciales {
 	private static final double MOTO_VALOR_DIA = 4000;
 	private static final double MOTO_VALOR_RECARGO = 2000;
 	
+	private CondicionesIniciales() {
+		
+	}
+	
 	public static Condiciones get(Vehiculo vehiculo) {
 		if(vehiculo.getTipo().equals(Moto.TIPO)) {
 			return new Condiciones(
