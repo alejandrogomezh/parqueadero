@@ -52,7 +52,7 @@ public class IngresoTest {
 		ingreso.ingresar(fecha, moto);
 
 		// assert
-		assertEquals(ingreso.getMsg(), Mensajes.INGRESO_NO_AUTORIZADO);
+		assertEquals(Mensajes.INGRESO_NO_AUTORIZADO, ingreso.getMsg());
 	}
 
 	@Test public void noIngresarPlacaADiaSabado() {
@@ -78,7 +78,7 @@ public class IngresoTest {
 		ingreso.ingresar(fecha, moto);
 
 		// assert
-		assertEquals(ingreso.getMsg(), Mensajes.INGRESO_NO_AUTORIZADO);
+		assertEquals(Mensajes.INGRESO_NO_AUTORIZADO, ingreso.getMsg());
 	}
 
 	@Test public void ingresarPlacaNoADiaDomingo() {
@@ -104,7 +104,7 @@ public class IngresoTest {
 		ingreso.ingresar(fecha, moto);
 
 		// assert
-		assertEquals(ingreso.getMsg(), Mensajes.INGRESO);
+		assertEquals(Mensajes.INGRESO, ingreso.getMsg());
 	}
 
 	@Test public void ingresarPlacaADiaLunes() {
@@ -130,7 +130,7 @@ public class IngresoTest {
 		ingreso.ingresar(fecha, moto);
 
 		// assert
-		assertEquals(ingreso.getMsg(), Mensajes.INGRESO);
+		assertEquals(Mensajes.INGRESO, ingreso.getMsg());
 	}
 
 	@Test public void yaHabiaIngresado() {
@@ -157,7 +157,7 @@ public class IngresoTest {
 		ingreso.ingresar(fecha, moto);
 
 		// assert
-		assertEquals(ingreso.getMsg(), Mensajes.YA_HABIA_INGRESADO);
+		assertEquals(Mensajes.YA_HABIA_INGRESADO, ingreso.getMsg());
 	}
 
 	@Test public void sinCupoMoto() {
@@ -183,7 +183,7 @@ public class IngresoTest {
 		ingreso.ingresar(fecha, moto);
 
 		// assert
-		assertEquals(ingreso.getMsg(), Mensajes.NO_HAY_CUPO);
+		assertEquals(Mensajes.NO_HAY_CUPO, ingreso.getMsg());
 	}
 	
 	@Test public void sinCupoCarro() {
@@ -209,7 +209,7 @@ public class IngresoTest {
 		ingreso.ingresar(fecha, carro);
 
 		// assert
-		assertEquals(ingreso.getMsg(), Mensajes.NO_HAY_CUPO);
+		assertEquals(Mensajes.NO_HAY_CUPO, ingreso.getMsg());
 	}
 	
 }

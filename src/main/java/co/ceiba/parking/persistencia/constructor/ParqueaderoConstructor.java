@@ -5,6 +5,10 @@ import co.ceiba.parking.persistencia.entidad.ParqueaderoEntity;
 
 public class ParqueaderoConstructor {
 
+	private ParqueaderoConstructor() {
+		
+	}
+	
 	public static Parqueadero aDominio(ParqueaderoEntity parqueaderoEntity) {
 		Parqueadero parqueadero = null;
 		if(parqueaderoEntity != null) {

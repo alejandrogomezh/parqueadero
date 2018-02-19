@@ -13,7 +13,7 @@ import co.ceiba.parking.persistencia.entidad.IngresadosEntity;
 
 public class IngresadosRepositorioPersistente implements IngresadosRepositorio{
 	private static final String CANTIDAD_POR_TIPO_VEHICULO = "Ingresados.cantidadPorTipoVehiculo";
-	private static final String OBTENER_POR_VEHICULO = "Ingresados.cantidadPorTipoVehiculo";
+	private static final String OBTENER_POR_VEHICULO = "Ingresados.obtenerPorPlaca";
 	
 	private EntityManager entityManager;
 

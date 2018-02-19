@@ -7,6 +7,10 @@ import co.ceiba.parking.persistencia.entidad.VehiculoEntity;
 
 public class IngresadosConstructor {
 
+	private IngresadosConstructor() {
+		
+	}
+	
 	public static Ingresados aDominio(IngresadosEntity ingresadosEntity) {
 		Ingresados ingresados = null;
 		if(ingresadosEntity != null) {

@@ -43,10 +43,10 @@ public class CostosTest {
 		// act
 		costos.calcular();
 		// assert
-		assertEquals(costos.getValorDias(), valorDia, 0);
-		assertEquals(costos.getValorHoras(), valorHora, 0);
-		assertEquals(costos.getValorRecargo(), valorRecargo, 0);
-		assertEquals(costos.getValorTotal(), valorTotal, 0);
+		assertEquals(valorDia, costos.getValorDias(), 0);
+		assertEquals(valorHora, costos.getValorHoras(), 0);
+		assertEquals(valorRecargo, costos.getValorRecargo(), 0);
+		assertEquals(valorTotal, costos.getValorTotal(), 0);
 	}
 
 	@Test public void motoSinRecargoUnDiaMasTresHoras() {
@@ -70,10 +70,10 @@ public class CostosTest {
 		// act
 		costos.calcular();
 		// assert
-		assertEquals(costos.getValorDias(), valorDia, 0);
-		assertEquals(costos.getValorHoras(), valorHora, 0);
-		assertEquals(costos.getValorRecargo(), valorRecargo, 0);
-		assertEquals(costos.getValorTotal(), valorTotal, 0);
+		assertEquals(valorDia, costos.getValorDias(), 0);
+		assertEquals(valorHora, costos.getValorHoras(), 0);
+		assertEquals(valorRecargo, costos.getValorRecargo(), 0);
+		assertEquals(valorTotal, costos.getValorTotal(), 0);
 	}
 
 	@Test public void carroSinRecargoUnDiaMasTresHoras() {
@@ -97,10 +97,10 @@ public class CostosTest {
 		// act
 		costos.calcular();
 		// assert
-		assertEquals(costos.getValorDias(), valorDia, 0);
-		assertEquals(costos.getValorHoras(), valorHora, 0);
-		assertEquals(costos.getValorRecargo(), valorRecargo, 0);
-		assertEquals(costos.getValorTotal(), valorTotal, 0);
+		assertEquals(valorDia, costos.getValorDias(), 0);
+		assertEquals(valorHora, costos.getValorHoras(), 0);
+		assertEquals(valorRecargo, costos.getValorRecargo(), 0);
+		assertEquals(valorTotal, costos.getValorTotal(), 0);
 	}
 	
 }

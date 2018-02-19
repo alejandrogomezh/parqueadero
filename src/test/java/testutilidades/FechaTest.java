@@ -4,6 +4,11 @@ import java.util.Calendar;
 import java.util.Date;
 
 public class FechaTest {
+	
+	private FechaTest() {
+		
+	}
+	
 	public static Date crearFecha(int dia, int mes, int anio){
 		Calendar fecha = Calendar.getInstance();
 		fecha.set(anio, mes, dia);

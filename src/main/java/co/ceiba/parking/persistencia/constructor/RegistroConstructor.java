@@ -7,6 +7,10 @@ import co.ceiba.parking.persistencia.entidad.VehiculoEntity;
 
 public class RegistroConstructor {
 
+	private RegistroConstructor() {
+		
+	}
+	
 	public static Registro aDominio(RegistroEntity registroEntity) {
 		Registro registro = null;
 		if(registroEntity != null) {

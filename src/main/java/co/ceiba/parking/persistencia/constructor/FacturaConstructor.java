@@ -7,6 +7,10 @@ import co.ceiba.parking.persistencia.entidad.RegistroEntity;
 
 public class FacturaConstructor {
 
+	private FacturaConstructor() {
+		
+	}
+	
 	public static Factura aDominio(FacturaEntity facturaEntity) {
 		Factura factura = null;
 		if(facturaEntity != null) {

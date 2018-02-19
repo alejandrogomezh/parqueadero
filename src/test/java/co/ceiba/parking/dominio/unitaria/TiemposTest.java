@@ -33,9 +33,9 @@ public class TiemposTest {
 		// act
 		tiempos.calcular();
 		// assert
-		assertEquals(tiempos.getDias(), 1);
-		assertEquals(tiempos.getHoras(), 3);
-		assertEquals(tiempos.getHorasTotal(), 27);
+		assertEquals(1, tiempos.getDias());
+		assertEquals(3, tiempos.getHoras());
+		assertEquals(27, tiempos.getHorasTotal());
 	}
 	
 	@Test public void unDiaDesde10Horas() {
@@ -52,9 +52,9 @@ public class TiemposTest {
 		// act
 		tiempos.calcular();
 		// assert
-		assertEquals(tiempos.getDias(), 1);
-		assertEquals(tiempos.getHoras(), 0);
-		assertEquals(tiempos.getHorasTotal(), 10);
+		assertEquals(1, tiempos.getDias());
+		assertEquals(0, tiempos.getHoras());
+		assertEquals(10, tiempos.getHorasTotal());
 	}
 
 	@Test public void unDiaDesde9Horas() {
@@ -71,9 +71,9 @@ public class TiemposTest {
 		// act
 		tiempos.calcular();
 		// assert
-		assertEquals(tiempos.getDias(), 1);
-		assertEquals(tiempos.getHoras(), 0);
-		assertEquals(tiempos.getHorasTotal(), 9);
+		assertEquals(1, tiempos.getDias());
+		assertEquals(0, tiempos.getHoras());
+		assertEquals(9, tiempos.getHorasTotal());
 	}
 
 	@Test public void ochoHoras() {
@@ -90,9 +90,9 @@ public class TiemposTest {
 		// act
 		tiempos.calcular();
 		// assert
-		assertEquals(tiempos.getDias(), 0);
-		assertEquals(tiempos.getHoras(), 8);
-		assertEquals(tiempos.getHorasTotal(), 8);
+		assertEquals(0, tiempos.getDias());
+		assertEquals(8, tiempos.getHoras());
+		assertEquals(8, tiempos.getHorasTotal());
 	}
 
 }

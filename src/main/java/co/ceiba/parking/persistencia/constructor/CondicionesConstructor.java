@@ -5,6 +5,10 @@ import co.ceiba.parking.persistencia.entidad.CondicionesEntity;
 
 public class CondicionesConstructor {
 	
+	private CondicionesConstructor() {
+		
+	}
+	
 	public static Condiciones aDominio(CondicionesEntity condicionesEntity) {
 		Condiciones condiciones = null;
 		if(condicionesEntity != null) {

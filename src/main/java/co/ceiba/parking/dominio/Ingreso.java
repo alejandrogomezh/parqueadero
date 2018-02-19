@@ -29,7 +29,7 @@ public class Ingreso {
 		return null;
 	}
 
-	public boolean puedeIngresar(Date fecha, Vehiculo vehiculo) {
+	private boolean puedeIngresar(Date fecha, Vehiculo vehiculo) {
 		Ingresados ingreso = ingresadosRepositorio.obtenerPorVehiculo(vehiculo);
 		if(ingreso != null) {
 			msg = Mensajes.YA_HABIA_INGRESADO;
@@ -50,7 +50,6 @@ public class Ingreso {
 			msg = Mensajes.NO_HAY_CUPO;
 			return false;
 		}
-		msg = Mensajes.PUEDE_INGRESAR;
 		return true;
 	}
 	

@@ -5,6 +5,10 @@ import co.ceiba.parking.persistencia.entidad.VehiculoEntity;
 
 public class VehiculoConstructor {
 	
+	private VehiculoConstructor() {
+		
+	}
+	
 	public static Vehiculo aDominio(VehiculoEntity vehiculoEntity) {
 		Vehiculo vehiculo = null;
 		if(vehiculoEntity != null) {
