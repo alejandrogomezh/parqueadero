@@ -8,8 +8,7 @@ public class ConexionJPA {
 	
 	private static final String PARKING_PU_TEST = "parking-pu-test";
 	private static EntityManagerFactory entityManagerFactory;
-
-	public ConexionJPA() {
+	static {
 		entityManagerFactory = Persistence.createEntityManagerFactory(PARKING_PU_TEST);
 	}
 	
